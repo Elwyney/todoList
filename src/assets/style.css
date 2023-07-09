@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Regular';
+    src: url('../assets/Suisse\ Intl/SuisseIntl-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Medium';
+    src: url('../assets/Suisse\ Intl/SuisseIntl-Medium.otf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'SuisseIntl-Regular';
+    padding: 150px 0 50px 0;
+}
+
+form {
+    width: 700px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "SuisseIntl-Medium";
+}
+
+.wrap_addTask {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.btn {
+    color: #FFFFFF;
+    background: #2E312F;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    width: 160px;
+    background: #ff5858;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+input,
+span {
+    padding: 12px 25px;
+}
+
+input,
+span {
+    display: block;
+    color: #2E312F;
+    border: none;
+    border-radius: 12px;
+    background: #F3F5F8;
+    font-size: 17px;
+    margin-top: 16px;
+}
+
+.item-task div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.item-task span {
+    width: 520px;
+    word-wrap: break-word;
+    animation: animation .7s ease;
+}
